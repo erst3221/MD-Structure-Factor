@@ -13,7 +13,7 @@ Calculates 3d structure factor and simulated x-ray diffraction pattern from mole
  * vtk
  
 ```
-python pip install setuptools wheel vtk scipy tqdm MDAnalsysis duecredit mayavi
+python pip install setuptools wheel vtk scipy tqdm MDAnalysis duecredit mayavi
 ```
 
 ## Example
