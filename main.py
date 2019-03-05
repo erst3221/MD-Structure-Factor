@@ -26,9 +26,9 @@ sfname=label+"_sf"
 
 if not os.path.isfile(sfname+".npz"):					#check to see if SF needs to be calculated
 	if not os.path.isfile(tfname+".npz"):  				#check to see if trajectory needs to be processed
-		print "processing trajectory file "+traj_file
+		print( "processing trajectory file "+traj_file)
 		lt.process(top_file,traj_file,tfname)   					#Process trajectory into numpy array.  Commented to run on windows
-		print 'done'
+		print( 'done')
 	traj=np.load(tfname+".npz")							#load processed trajectory
 	rad=dens.load_radii("radii.txt")					#load radii definitions from file
 	dens.compute_sf(traj['coords'],traj['dims'],traj['typ'],sfname,rad)		#compute time-averaged 3d structure factor and save to sfname.npz
