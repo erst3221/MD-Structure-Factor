@@ -28,7 +28,7 @@ def initialize():
     parser.add_argument('--lcscale', default=1, type=float, help='Scale color map on log plots')
     parser.add_argument('-fi', '--first_frame', default=0, type=int, help='frame to start at')
     parser.add_argument('-e', '--end_frame', default=-1, type=int, help='frame to end at')
-    parser.add_argument("-tf","--traj_format",default="gromacs",type=str,help='format of MD trajectory file to load')
+    parser.add_argument("-tf","--traj_format",default="LAMMPS",type=str,help='format of MD trajectory file to load')
     parser.add_argument('-fr', '--force_recompute', default=0, type=int, help='force recomputing SF (if >=1) or '
                                                                               'trajectory and SF(if >=2)')
 
