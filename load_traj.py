@@ -4,6 +4,7 @@ from __future__ import print_function
 import numpy as np
 import tqdm
 import mdtraj as md
+import MDAnalysis
 
 """ process trajectory and topology file and store in output file as np array """
 

@@ -8,7 +8,7 @@ import os.path
 
 import load_traj as lt
 import dens
-import plot2d as p2d
+import eric_plot2d as p2d
 
 import platform
 if platform.system()=="Windows":  #set up path separators 
