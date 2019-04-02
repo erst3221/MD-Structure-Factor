@@ -103,7 +103,7 @@ if __name__ == "__main__":
         top_file = args.topology
         traj_file = args.trajectory
         basename = args.topology.rsplit('.', 1)[0]
-
+    print(top_file)
     print("running on", platform.system(), platform.release(), platform.version())
 
     if platform.system() == "Windows":  # path separators
