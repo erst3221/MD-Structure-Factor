@@ -16,8 +16,8 @@ if platform.system()=="Windows":  #set up path separators
 else:
 	fd="/"
 
-top_file="W11_large.psf"
-traj_file="DH5_423_0.dcd"
+top_file="PTB4.psf"
+traj_file="PTB4_dump.dcd"
 
 label="o2"
 
