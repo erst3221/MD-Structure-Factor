@@ -90,11 +90,8 @@ def process_gro(topology_filename, trajectory_filename, output_filename):
 
 def process_gro_mdtraj(topology_filename, trajectory_filename, output_filename):
 
-    print("processing ", trajectory_filename)
-    if trajectory_filename.endswith('.dcd'):
-        t = md.load_dcd(trajectory_filename, top=topology_filename)
-    elif trajectory_filename.endswith('.trr'):
-        t = md.load(trajectory_filename,top=topology_filename)
+    print("processing this is being called look at me here I am I'm working", trajectory_filename)
+    t = md.load(trajectory_filename, top=topology_filename)
     coords = t.xyz * 10  # convert to angstroms
     dims = t.unitcell_lengths * 10
 
@@ -106,6 +103,7 @@ def process_gro_mdtraj(topology_filename, trajectory_filename, output_filename):
             typ.append('NA')
         else:
             typ.append(a.element.symbol)
+            ## print(typ)
 
     print("saving ", output_filename)
 
